@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Management</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">P</div>
+        <div>
+          <strong>Pharmacy</strong>
+          <span>Management</span>
+        </div>
+      </div>
+
+      <nav id="navigation">
+        <button class="nav-item active" data-page="home">
+          <span>⌂</span> Home
+        </button>
+
+        <div class="nav-group">
+          <button class="nav-item parent">
+            <span>◈</span> Analytics <span class="arrow">›</span>
+          </button>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-item parent">
+            <span>▣</span> Government Pricing <span class="arrow">›</span>
+          </button>
+          <div class="submenu">
+            <button data-page="analysis">Analysis</button>
+            <button data-page="submissions">Submissions</button>
+            <button data-page="data">Data</button>
+            <button data-page="administration">Administration</button>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-item parent">
+            <span>▦</span> Master Data Manager <span class="arrow">›</span>
+          </button>
+          <div class="submenu">
+            <button data-page="mapping-sets">Mapping Sets</button>
+            <button data-page="advanced-membership">Advanced Membership</button>
+            <button data-page="products">Products</button>
+            <button data-page="trading-partners">Trading Partners</button>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-item parent">
+            <span>◫</span> Revenue Manager <span class="arrow">›</span>
+          </button>
+          <div class="submenu">
+            <button data-page="administration-revenue">Administration</button>
+            <button data-page="contracts">Contracts</button>
+            <button data-page="submissions-revenue">Submissions</button>
+            <button data-page="settlements">Settlements</button>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <h1 id="page-title">Home</h1>
+          <p id="page-description">Pharmacy management dashboard</p>
+        </div>
+        <div class="status">
+          <span class="dot"></span> System
+        </div>
+      </header>
+
+      <section id="page-content" class="page">
+        <div class="cards">
+          <div class="card">
+            <span class="label">Application</span>
+            <strong>Pharmacy Management</strong>
+          </div>
+          <div class="card">
+            <span class="label">Technology</span>
+            <strong>Node.js</strong>
+          </div>
+          <div class="card">
+            <span class="label">Database</span>
+            <strong>Oracle</strong>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Welcome</h2>
+          <p>Select a module from the sidebar to begin.</p>
+          <button id="db-test" class="primary">Test Oracle Connection</button>
+          <pre id="db-result"></pre>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
