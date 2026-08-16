@@ -42,7 +42,7 @@ metadata:
   name: myapp
   namespace: webapps
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: pharmacy
